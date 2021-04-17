@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет-магазин Nimes</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+        <div class="header__nav-link">
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                <a href="#" class="header__navigation-link link">Woman</a>
+                </li>
+                <li class="header__nav-item">
+                <a href="#" class="header__navigation-link link">Man</a>
+                </li>
+                <li class="header__nav-item">
+                <a href="#" class="header__navigation-link link">New</a>
+                </li>
+            </ul>
+            </div>
+        <div class="header__logo">
+            <a href="index.html"><img src="./img/logo.png" alt="Logo Mines" class="header__logo-img" /></a>
+        </div>
+        <div class="header__user-features">
+            <a href="profile.html" class="header__User link">User</a>
+            <a href="#"
+            ><img src="./img/search.svg" alt="Search" class="header__search"
+            /></a>
+            <a href="#"><img src="./img/cart.svg" alt="Cart" class="header__cart" /></a>
+        </div>
+        </div>
+    </header>
+    <div class="profile container">
+        <div class="profile__photo-history">
+            <div class="photo">
+                <img src="./img/yourphoto.jpg" alt="Your Photo" class="profile__poto-img" />
+            </div>
+            <div class="history container">
+                <span class="history__header">History</span>
+                <div class="history__new-products">
+                <span>28.02.1990</span>
+                <span>Jacket</span>
+                <span>1</span>
+                <span>$60</span>
+                </div>
+                <div class="history__new-products">
+                <span>15.07.2002</span>
+                <span>Jacket Black XXL</span>
+                <span>1</span>
+                <span>$260</span>
+                </div>
+                <div class="history__new-products">
+                <span>07.09.2003</span>
+                <span>Overalls</span>
+                <span>5</span>
+                <span>$6000</span>
+                </div>
+                <div class="history__new-products">
+                <span>15.09.2003</span>
+                <span>Model white Extra</span>
+                <span>1</span>
+                <span>$58</span>
+                </div>
+                <div class="history__new-products">
+                <span>25.05.2005</span>
+                <span>Jacket</span>
+                <span>1</span>
+                <span>$8</span>
+                </div>
+                <div class="history__new-products">
+                <span>25.02.2020</span>
+                <span>Jacket</span>
+                <span>3</span>
+                <span>$60</span>
+                </div>
+            </div>
+        </div>
+        <div class="profile__Viwe-description">
+            <h2 class="profile__span">Your profile</h2>
+            <form action="#" method="post" class="form">
+                <div class="profile__data-list">
+                    <label for="username">Name</label>
+                    <input class="profile__input" id="username" type="text" placeholder="Enter your name" maxlength="5" size="50" name="username" required>
+                </div>
+                <div class="profile__data-list">
+                    <label >Surname</label>
+                    <input class="profile__input" placeholder="Enter your surname" maxlength="5" type="text" size="50" name="usersurname" required />
+                </div>
+                <div class="profile__data-list">
+                    <label>Birthday</label>
+                    <input class="profile__input" placeholder="Enter your birthday" maxlength="5" type="text" size="50" name="userbirthday">
+                </div>
+                <div class="profile__data-list">
+                    <label>Gender</label>
+                    <div class="profile__radios">
+                        <label for="male" class="profile__label-radio">Male</label>
+                        <input class="profile__radio" checked type="radio" id="male" name="gender">
+                        <label for="female" class="profile__label-radio">Female</label>
+                        <input type="radio" id="female" name="gender">
+                    </div>
+                </div>
+                <div class="profile__data-input">
+                    <label>Country</label>
+                    <input class="profile__input" type="text" list="country" placeholder="Select your country"/>
+                    <datalist  id="country">
+                    <option label="Rus">1</option>
+                    <option label="USE">2</option>
+                    </datalist>
+                </div>
+                <div class="profile__data-input">
+                    <label>City</label>
+                    <input class="profile__input" placeholder="Enter your city" maxlength="4" type="text" size="20" name="#" autocomplete="on">
+                </div>
+                <div class="profile__data-input">
+                    <label>E-mail</label>
+                    <input class="profile__input" placeholder="Enter your E-mail" type="email" size="20" name="#" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})">
+                </div>
+                <div class="profile__data-input">
+                    <label>Phone</label>
+                    <input class="profile__input" placeholder="Enter your phone"  type="tel" name="phone" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}">
+                </div>
+                <div class="profile__textarea-wrapper">
+                    <p>About yourself</p>
+                    <textarea class="profile__textarea" name="#" id="#" cols="40" rows="10"></textarea>
+                </div>
+                <div class="profile__button-wrapper">
+                    <button class="profile__button link" type="button">Save</button>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+        <footer class="footer">
+            <div class="footer__container container">
+            <a href="index.html" class="footer__logo-link link"
+                ><img src="./img/logo_white.png" alt="Start page Nimes"></a>
+            <ul class="footer__list">
+                <li class="footer__nav-item footer__item">
+                <a href="#" class="footer__link link">Shop</a>
+                </li>
+                <li class="footer__nav-item footer__item">
+                <a href="#" class="footer__link link">Delivery</a>
+                </li>
+                <li class="footer__nav-item footer__item">
+                <a href="#" class="footer__link link">Service</a>
+                </li>
+                <li class="footer__nav-item footer__item">
+                <a href="#" class="footer__link link">Sitemap</a>
+                </li>
+                <li class="footer__nav-item footer__item">
+                <a href="contacts.html" target="_blank" class="footer__link link">Contacts</a>
+                </li>
+            </ul>
+            <ul class="footer__social-list">
+                <li class="footer__nav-item social-item">
+                <a href="https://ru-ru.facebook.com" class="footer__social-link"
+                    ><img src="./img/fb.svg" alt="Facebook" class="footer__social-logo"></a>
+                </li>
+                <li class="footer__nav-item social-item">
+                <a href="https://instagram.com" class="footer__social-link"
+                    ><img src="./img/inst.svg" alt="Instagram" class="footer__social-logo"></a>
+                </li>
+                <li class="footer__nav-item social-item">
+                <a href="https://pinterest.ru" class="footer__social-link"
+                    ><img src="./img/pint.svg" alt="Pinteres" class="footer__social-logo"></a>
+                </li>
+                <li class="footer__nav-item social-item">
+                <a href="https://twitter.com" class="footer__social-link"
+                    ><img src="./img/twitter.svg" alt="Twitter" class="footer__social-logo"></a>
+                </li>
+            </ul>
+            </div>
+        </footer>
+</body>
+</html>
